@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exchange</string>
+    <string name="activity_main_txtLAmount_hint">Amount</string>
+    <string name="activity_main_txtAmount">0.00</string>
+    <string name="activity_main_dollar">Dollar</string>
+    <string name="activity_main_euro">Euro</string>
+    <string name="activity_main_pound">Pound</string>
+    <string name="activity_main_yen">Yen</string>
+    <string name="activity_main_won">KRW</string>
+    <string name="activity_main_lblFrom">From</string>
+    <string name="activity_main_lblTo">To</string>
+    <string name="activity_main_btnExchange">Exchange</string>
+    <string name="activity_main_txtLAmount_iconDesc">coin icon in the text field for entering the quantity</string>
+    <string name="activity_main_imgToBl">TODO</string>
+    <string name="activity_main_imgFromBl">TODO</string>
+</resources>

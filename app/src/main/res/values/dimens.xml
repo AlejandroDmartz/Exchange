@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_main_txtLAmount_marginTop">12dp</dimen>
+    <dimen name="activity_main_txtLAmount_margin">16dp</dimen>
+    <dimen name="activity_main_lblFrom_margin">16dp</dimen>
+    <dimen name="activity_main_lblFrom_size">18sp</dimen>
+    <dimen name="activity_main_rbFrom_margin">16dp</dimen>
+    <dimen name="activiy_main_lblTo_margin">16dp</dimen>
+    <dimen name="activity_main_lblTo_size">18sp</dimen>
+    <dimen name="activity_main_img_marginTop">12dp</dimen>
+    <dimen name="activity_main_btnExchange_padding">12dp</dimen>
+    <dimen name="activity_main_btnExchange_marginTop">16dp</dimen>
+    <dimen name="activity_main_btnExchange_margin">36dp</dimen>
+    <dimen name="activity_main_imgToBl_marginStart">16dp</dimen>
+    <dimen name="activity_main_imgToBl_marginEnd">86dp</dimen>
+    <dimen name="activity_main_imgFromBl_marginStart">16dp</dimen>
+    <dimen name="activity_main_imgFromBl_marginEnd">86dp</dimen>
+    <dimen name="activity_main_imgFrom_marginEnd">8dp</dimen>
+    <dimen name="activity_main_imgTo_marginStart">8dp</dimen>
+</resources>

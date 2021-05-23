@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="@string/activity_main_txtLAmount_hint"
+            android:layout_marginTop="@dimen/activity_main_txtLAmount_marginTop"
+            android:layout_marginStart="@dimen/activity_main_txtLAmount_margin"
+            android:layout_marginEnd="@dimen/activity_main_txtLAmount_margin"
+            app:startIconDrawable="@drawable/ic_coin"
+            app:startIconTint="@color/violet_light"
+            app:startIconContentDescription="@string/activity_main_txtLAmount_iconDesc"
+            android:textColorHint="@color/orange_amount"
+            app:boxStrokeColor="@color/orange_amount"
+            app:hintTextColor="@color/purple"
+            app:helperTextTextAppearance="@style/HelperTextAppearance"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/activity_main_txtAmount"
+                android:textColor="@color/purple"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_lblFrom_margin"
+            android:layout_marginTop="@dimen/activity_main_lblFrom_margin"
+            android:text="@string/activity_main_lblFrom"
+            android:textColor="@color/pink_light"
+            android:textSize="@dimen/activity_main_lblFrom_size"
+            android:textStyle="bold"
+            android:labelFor="@+id/rbFrom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLAmount" />
+
+        <ImageView
+            android:id="@+id/imgFromBl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_imgFromBl_marginStart"
+            android:layout_marginEnd="@dimen/activity_main_imgFromBl_marginEnd"
+            app:layout_constraintTop_toBottomOf="@+id/lblFrom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/bottom_line"
+            android:contentDescription="@string/activity_main_imgFromBl" />
+
+        <RadioGroup
+            android:id="@+id/rbFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_rbFrom_margin"
+            android:layout_marginEnd="@dimen/activity_main_rbFrom_margin"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lblFrom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbFromDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:checked="true"
+                android:enabled="false"
+                android:text="@string/activity_main_dollar" />
+
+            <RadioButton
+                android:id="@+id/rbFromEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_euro" />
+
+            <RadioButton
+                android:id="@+id/rbFromPound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_pound" />
+
+            <RadioButton
+                android:id="@+id/rbFromYen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_yen" />
+
+            <RadioButton
+                android:id="@+id/rbFromWon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_won" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activiy_main_lblTo_margin"
+            android:layout_marginTop="@dimen/activiy_main_lblTo_margin"
+            android:text="@string/activity_main_lblTo"
+            android:textColor="@color/pink_light"
+            android:textSize="@dimen/activity_main_lblTo_size"
+            android:textStyle="bold"
+            android:labelFor="@+id/rbTo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbFrom" />
+
+        <ImageView
+            android:id="@+id/imgToBl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_imgToBl_marginStart"
+            android:layout_marginEnd="@dimen/activity_main_imgToBl_marginEnd"
+            app:layout_constraintTop_toBottomOf="@+id/lblTo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/bottom_line"
+            android:contentDescription="@string/activity_main_imgToBl" />
+
+        <RadioGroup
+            android:id="@+id/rbTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_main_rbFrom_margin"
+            android:layout_marginEnd="@dimen/activity_main_rbFrom_margin"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lblTo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbToDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_dollar" />
+
+            <RadioButton
+                android:id="@+id/rbToEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:checked="true"
+                android:enabled="false"
+                android:text="@string/activity_main_euro" />
+
+            <RadioButton
+                android:id="@+id/rbToPound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_pound" />
+
+            <RadioButton
+                android:id="@+id/rbToYen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_yen" />
+
+            <RadioButton
+                android:id="@+id/rbToWon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                app:buttonTint="@color/orange"
+                android:text="@string/activity_main_won" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_main_img_marginTop"
+            android:layout_marginEnd="@dimen/activity_main_imgFrom_marginEnd"
+            app:tint="@color/violet_light"
+            app:layout_constraintTop_toBottomOf="@+id/rbTo"
+            app:layout_constraintEnd_toStartOf="@+id/imgArrow"
+            android:src="@drawable/ic_dollar" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_main_img_marginTop"
+            app:tint="@color/orange_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbTo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_double_arrow_24" />
+
+        <ImageView
+            android:id="@+id/imgTo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_main_img_marginTop"
+            android:layout_marginStart="@dimen/activity_main_imgTo_marginStart"
+            app:tint="@color/violet_light"
+            app:layout_constraintTop_toBottomOf="@+id/rbTo"
+            app:layout_constraintStart_toEndOf="@+id/imgArrow"
+            android:src="@drawable/ic_euro" />
+
+        <Button
+            android:id="@+id/btnExchange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgArrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/activity_main_btnExchange_padding"
+            android:layout_marginTop="@dimen/activity_main_btnExchange_marginTop"
+            android:layout_marginStart="@dimen/activity_main_btnExchange_margin"
+            android:layout_marginEnd="@dimen/activity_main_btnExchange_margin"
+            android:text="@string/activity_main_btnExchange"
+            android:backgroundTint="@color/pink_btn"
+            android:textColor="@color/yellow_light" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
